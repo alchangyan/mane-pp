@@ -1,1 +1,1 @@
-cp ./build/. /var/www/html/manebaghdasaryan.com/
+cp -a  ./build/. /var/www/html/manebaghdasaryan.com/
