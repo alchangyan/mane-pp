@@ -2,4 +2,9 @@
   height: 100vh;
   width: calc(100% - 200px);
   margin: 0 100px;
+  display: none;
+
+  &.visible {
+    display: block;
+  }
 }
