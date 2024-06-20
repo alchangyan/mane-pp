@@ -1,0 +1,40 @@
+.background {
+  background-color: #111111;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+
+  .yellow {
+    top: 0;
+    height: 200vh;
+    width: 200vw;
+    background-color: #ffb504;
+    position: absolute;
+    box-shadow: inset 0px 0px 20px 0px #000;
+    transition: 0.3s;
+  }
+
+  &.home .yellow {
+    right: 80%;
+    transform: rotate(-14deg);
+  }
+
+  &.stageExp .yellow {
+    right: 50%;
+    transform: rotate(0deg);
+  }
+
+  &.education .yellow {
+    right: 30%;
+    top: -500px;
+    transform: rotate(14deg);
+  }
+
+  &.contacts .yellow {
+    right: 120px;
+    transform: rotate(0deg);
+  }
+}

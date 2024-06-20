@@ -1,0 +1,91 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 200px);
+  margin-top: 100px;
+
+  .image {
+    background-image: url("../../assets/images/mane-main-bw.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-width: 600px;
+    width: 600px;
+    height: 100%;
+    border-radius: 30px;
+    border: 2px solid #000;
+    box-sizing: border-box;
+  }
+
+  .content-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .content {
+      width: 810px;
+
+      h1,
+      .subtitle {
+        text-transform: uppercase;
+        margin: 0;
+      }
+
+      h1 {
+        font-size: 70px;
+        color: #ffb504;
+        font-weight: 700;
+        }
+        
+        .subtitle {
+        font-size: 50px;
+        color: #fff;
+        margin-bottom: 50px;
+        font-weight: 100;
+      }
+
+      p {
+        color: #fff;
+        font-size: 20px;
+        line-height: 36px;
+      }
+
+      .button {
+        margin-top: 60px;
+        display: inline-flex;
+        border: 1px solid rgba(255, 180, 4, 0.602);
+        height: 60px;
+        border-radius: 30px;
+        color: #fff;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        cursor: pointer;
+        transition: 0.2s;
+
+        & > div {
+          &:nth-child(1) {
+            margin: 0 30px;
+          }
+
+          &:nth-child(2) {
+            height: 60px;
+            width: 60px;
+            background-color: #ffb504;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 30px;
+          }
+        }
+
+        &:hover {
+          border-color: #ffb504;
+        }
+      }
+    }
+  }
+}

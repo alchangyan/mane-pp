@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+* {
+  font-family: Kanit;
+}
+
+$kanit-fonts: 
+  "Thin" 100 normal,
+  "ThinItalic" 100 italic,
+  "ExtraLight" 200 normal,
+  "ExtraLightItalic" 200 italic,
+  "Light" 300 normal,
+  "LightItalic" 300 italic,
+  "Regular" 400 normal,
+  "Italic" 400 italic,
+  "Medium" 500 normal,
+  "MediumItalic" 500 italic,
+  "SemiBold" 600 normal,
+  "SemiBoldItalic" 600 italic,
+  "Bold" 700 normal,
+  "BoldItalic" 700 italic,
+  "ExtraBold" 800 normal,
+  "ExtraBoldItalic" 800 italic,
+  "Black" 900 normal,
+  "BlackItalic" 900 italic;
+
+@each $name, $weight, $style in $kanit-fonts {
+  @font-face {
+    font-family: Kanit;
+    src: url(./assets/fonts/Kanit/Kanit-#{$name}.ttf) format('truetype');
+    font-weight: $weight;
+    font-style: $style;
+  }
+}
