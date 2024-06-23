@@ -1,14 +1,18 @@
-import { useState } from 'react'
+import { useEffect, useState } from "react";
 import Background from "./components/Background";
 import Main from "./components/Main";
 import Navigation from "./components/Navigation";
 import PageContext from "./store/page";
-import StageExp from './components/StageExp';
-import Education from './components/Education';
-import Contacts from './components/Contacts';
+import StageExp from "./components/StageExp";
+import Education from "./components/Education";
+import Contacts from "./components/Contacts";
 
 function App() {
-  const [page, setPage] = useState<Pages>('home');
+  const [page, setPage] = useState<Pages>("home");
+
+  useEffect(() => {
+    document.body.scrollTo(0, 0);
+  });
 
   return (
     <PageContext.Provider value={[page, setPage]}>

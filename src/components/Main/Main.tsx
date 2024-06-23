@@ -14,7 +14,7 @@ const Main: FC = () => {
 
   return (
     <Section visible={page === 'home'}>
-      <div className="wrapper">
+      <div className="mainWrapper">
         <div className="image" />
         <div className="content-wrapper">
           <div className="content">
