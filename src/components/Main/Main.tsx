@@ -1,5 +1,11 @@
 import { useContext, type FC } from "react";
-import { FaArrowRight } from "react-icons/fa";
+import {
+  FaArrowRight,
+  FaInstagram,
+  FaTelegramPlane,
+  FaRegEnvelopeOpen  ,
+} from "react-icons/fa";
+import { FaFacebookF } from "react-icons/fa6";
 
 import Section from "../Section";
 import PageContext from "../../store/page";
@@ -13,13 +19,47 @@ const Main: FC = () => {
   };
 
   return (
-    <Section visible={page === 'home'}>
+    <Section visible={page === "home"}>
       <div className="mainWrapper">
         <div className="image" />
         <div className="content-wrapper">
           <div className="content">
             <h1>Mane Baghdasaryan</h1>
             <div className="subtitle">Soprano singer</div>
+            <div className="contacts">
+              <div className="item">
+                <a
+                  href="https://www.instagram.com/mane_721/"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
+                  <FaInstagram />
+                </a>
+              </div>
+              <div className="item">
+                <a
+                  href="https://t.me/Mane211"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
+                  <FaTelegramPlane />
+                </a>
+              </div>
+              <div className="item">
+                <a
+                  href="https://www.facebook.com/mane.baghdasaryan.5"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
+                  <FaFacebookF />
+                </a>
+              </div>
+              <div className="item">
+                <a href="mailto:mane.baghdasaryan21@gmail.com">
+                  <FaRegEnvelopeOpen   />
+                </a>
+              </div>
+            </div>
             <p>
               I am a professional opera singer who began my career in 2012. My
               formal education in music commenced at the Yerevan State

@@ -25,6 +25,7 @@
     margin: 8px 0;
     transition: 0.2s;
     background-color: #524f51;
+    position: relative;
 
     &:hover,
     &.active {
@@ -33,6 +34,29 @@
 
     &.active {
       background-color: #ffb504;
+    }
+
+    & > .tooltip {
+      position: absolute;
+      text-transform: uppercase;
+      right: calc(100% + 20px);
+      box-sizing: border-box;
+      border: 2px solid #ffb504;
+      font-size: 14px;
+      border-radius: 6px;
+      padding: 0px 12px;
+      white-space: nowrap;
+      background-color: #524f51;
+      color: #fff;
+      transition: 0.2s;
+      opacity: 0;
+      visibility: hidden;
+      font-weight: 600;
+    }
+    
+    &:hover .tooltip {
+      opacity: 1;
+      visibility: visible;
     }
   }
 }
